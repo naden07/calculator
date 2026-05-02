@@ -13,6 +13,8 @@ def perform_calculation(operation, num1, num2):
             raise ZeroDivisionError("Error: Division by zero is not allowed.")
         return num1 / num2
 
+    return 0
+
 def get_number_input(prompt):
     """Ensures the user provides a valid number, capturing input errors."""
     while True:

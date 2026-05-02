@@ -12,3 +12,12 @@ def perform_calculation(operation, num1, num2):
         if num2 == 0:
             raise ZeroDivisionError("Error: Division by zero is not allowed.")
         return num1 / num2
+
+def get_number_input(prompt):
+    """Ensures the user provides a valid number, capturing input errors."""
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Invalid input! Please enter a numeric value.")
+

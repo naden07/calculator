@@ -49,3 +49,12 @@ def main():
                 print(f"\nAn unexpected error occurred: {e}")
         else:
             print("Invalid selection. Please choose a number from 1 to 4.")
+
+        #Ask to try again
+        repeat = input("\nDo you want to try again? (yes/no): ").lower().strip()
+        if repeat not in ['yes', 'y']:
+            print("Thank you!")
+            sys.exit()
+
+if __name__ == "__main__":
+    main()
